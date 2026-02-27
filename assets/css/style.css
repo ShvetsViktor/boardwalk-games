@@ -1,0 +1,12 @@
+/* Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
+/* Macondo font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300&family=Macondo&family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: 'Macondo', cursive;
+}
