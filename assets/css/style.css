@@ -11,6 +11,8 @@
     --secondary-color: #aa9581;
     --highlight-color: #416a8e;
     --light-highlight-color: #7a9fc2;
+    --bg-light: #f4f7fa;
+    --footer-bg: #2c4a63;
 }
 
 /* Global styles */
@@ -28,4 +30,149 @@ h3 {
 
 .sub-heading-color {
     color: var(--highlight-color);
+}
+
+/* Navbar */
+
+.bg-primary-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #ffffff;
+}
+
+/* Hero Carousel */
+
+.carousel-img {
+    object-fit: cover;
+    height: 480px;
+}
+
+.carousel-caption h2 {
+    font-family: var(--secondary-font);
+    color: #ffffff;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Section backgrounds */
+
+.bg-light-custom {
+    background-color: var(--bg-light);
+}
+
+/* Service & Game Cards */
+
+.service-card,
+.game-card {
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover,
+.game-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.service-img {
+    object-fit: cover;
+    height: 200px;
+}
+
+.game-img {
+    object-fit: cover;
+    height: 180px;
+}
+
+/* Game Library Carousel */
+
+.library-carousel-img {
+    object-fit: cover;
+    height: 420px;
+}
+
+/* CTA Button */
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.6rem 1.6rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary-custom:hover,
+.btn-primary-custom:focus {
+    background-color: var(--footer-bg);
+    border-color: var(--footer-bg);
+    color: #ffffff;
+}
+
+/* Footer */
+
+#contact {
+    background-color: var(--primary-color);
+}
+
+#contact h3 {
+    color: #ffffff !important;
+}
+
+.footer-links li {
+    margin-bottom: 0.3rem;
+}
+
+.footer-links a,
+.social-link {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.social-link:hover {
+    color: #ffffff !important;
+}
+
+.bg-footer {
+    background-color: var(--footer-bg);
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 767.98px) {
+    .carousel-img {
+        height: 260px;
+    }
+
+    .library-carousel-img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel-img {
+        height: 200px;
+    }
+
+    .library-carousel-img {
+        height: 180px;
+    }
+
+    .service-img,
+    .game-img {
+        height: 160px;
+    }
 }

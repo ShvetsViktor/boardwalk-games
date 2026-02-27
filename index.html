@@ -4,18 +4,388 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boardwalk Games</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <!-- Custom styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <h1>Welcome to Boardwalk Games</h1>
-    <p class="sub-heading-color">Your one-stop destination for all board games!</p>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#home" aria-label="Boardwalk Games home">
+                <img src="assets/images/logo-sm-white.png" alt="Boardwalk Games logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#new-games">New Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fav-games">Favourites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#game-library">Game Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section id="home" aria-label="Hero carousel">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/boardwalk-games-carousel-image-1.webp" class="d-block w-100 carousel-img"
+                        alt="People enjoying board games together">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Welcome to Boardwalk Games</h2>
+                        <p>Your one-stop destination for all board games!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/boardwalk-games-carousel-image-2.webp" class="d-block w-100 carousel-img"
+                        alt="A collection of board games on display">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Hundreds of Games to Choose From</h2>
+                        <p>Find the perfect game for every occasion.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/boardwalk-games-carousel-image-3.webp" class="d-block w-100 carousel-img"
+                        alt="Friends gathered around a board game">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Fun for the Whole Family</h2>
+                        <p>Create lasting memories with games for all ages.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/boardwalk-games-carousel-image-4.webp" class="d-block w-100 carousel-img"
+                        alt="Board game night event">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Join Our Game Nights</h2>
+                        <p>Meet fellow enthusiasts and play together.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/boardwalk-games-carousel-image-5.webp" class="d-block w-100 carousel-img"
+                        alt="Strategy board game in progress">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Strategy &amp; Adventure</h2>
+                        <p>Challenge yourself with our strategy game selection.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/boardwalk-games-carousel-image-6.webp" class="d-block w-100 carousel-img"
+                        alt="Board game cafe interior">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Visit Our Café</h2>
+                        <p>Play in a comfortable, welcoming atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Our Services</h2>
+                <p class="sub-heading-color lead">Everything you need for the ultimate board game experience</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm service-card">
+                        <img src="assets/images/services-1.webp" class="card-img-top service-img"
+                            alt="Board game rentals service">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Game Rentals</h3>
+                            <p class="card-text">Rent from our huge library of board games for an evening or a weekend at great prices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm service-card">
+                        <img src="assets/images/services-2.webp" class="card-img-top service-img"
+                            alt="Board game café service">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Game Café</h3>
+                            <p class="card-text">Enjoy food, drinks, and games in our cosy café environment. Pay one entry fee and play all day.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm service-card">
+                        <img src="assets/images/services-3.webp" class="card-img-top service-img"
+                            alt="Private event hosting service">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Private Events</h3>
+                            <p class="card-text">Book a private room for birthdays, team-building, or any celebration with a dedicated host.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm service-card">
+                        <img src="assets/images/services-4.webp" class="card-img-top service-img"
+                            alt="Board game tournaments service">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Tournaments</h3>
+                            <p class="card-text">Compete in our regular tournaments for a chance to win prizes and glory on the leaderboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Games Section -->
+    <section id="new-games" class="py-5 bg-light-custom">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>New Arrivals</h2>
+                <p class="sub-heading-color lead">The latest additions to our ever-growing collection</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm game-card">
+                        <img src="assets/images/new-games-1.webp" class="card-img-top game-img"
+                            alt="New board game arrival 1">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h6">Epic Quest</h3>
+                            <p class="card-text small text-muted">Strategy · 2–5 Players · 60–120 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm game-card">
+                        <img src="assets/images/new-games-2.webp" class="card-img-top game-img"
+                            alt="New board game arrival 2">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h6">Realm of Shadows</h3>
+                            <p class="card-text small text-muted">Adventure · 1–4 Players · 90 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm game-card">
+                        <img src="assets/images/new-games-3.webp" class="card-img-top game-img"
+                            alt="New board game arrival 3">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h6">City Builders</h3>
+                            <p class="card-text small text-muted">Economic · 2–4 Players · 45–90 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm game-card">
+                        <img src="assets/images/new-games-4.webp" class="card-img-top game-img"
+                            alt="New board game arrival 4">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h6">Wild Safari</h3>
+                            <p class="card-text small text-muted">Family · 2–6 Players · 30–45 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favourite Games Section -->
+    <section id="fav-games" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Customer Favourites</h2>
+                <p class="sub-heading-color lead">The games our community loves most</p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm game-card">
+                        <img src="assets/images/fav-games-1.webp" class="card-img-top game-img"
+                            alt="Favourite board game 1">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h6">Catan</h3>
+                            <p class="card-text small text-muted">Strategy · 3–4 Players · 60–120 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm game-card">
+                        <img src="assets/images/fav-games-2.webp" class="card-img-top game-img"
+                            alt="Favourite board game 2">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h6">Ticket to Ride</h3>
+                            <p class="card-text small text-muted">Family · 2–5 Players · 45–90 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm game-card">
+                        <img src="assets/images/fav-games-3.webp" class="card-img-top game-img"
+                            alt="Favourite board game 3">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h6">Pandemic</h3>
+                            <p class="card-text small text-muted">Co-op · 2–4 Players · 45–60 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm game-card">
+                        <img src="assets/images/fav-games-4.webp" class="card-img-top game-img"
+                            alt="Favourite board game 4">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h6">Wingspan</h3>
+                            <p class="card-text small text-muted">Strategy · 1–5 Players · 40–70 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Library Carousel Section -->
+    <section id="game-library" class="py-5 bg-light-custom">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Browse Our Game Library</h2>
+                <p class="sub-heading-color lead">Hundreds of titles waiting to be explored</p>
+            </div>
+            <div id="libraryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner rounded shadow">
+                    <div class="carousel-item active">
+                        <img src="assets/images/game-library-carousel-1.webp" class="d-block w-100 library-carousel-img"
+                            alt="A shelf of board games in the library">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/game-library-carousel-2.webp" class="d-block w-100 library-carousel-img"
+                            alt="Close-up of board game boxes in the library">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/game-library-carousel-3.webp" class="d-block w-100 library-carousel-img"
+                            alt="Players browsing the game library">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/game-library-carousel-4.webp" class="d-block w-100 library-carousel-img"
+                            alt="Game library interior view">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#libraryCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#libraryCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#contact" class="btn btn-primary-custom">Get in Touch to Find Your Game</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <section id="contact" class="py-5 bg-primary-custom text-white">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <img src="assets/images/logo-sm-white.png" alt="Boardwalk Games logo" height="50" class="mb-3">
+                    <p>A welcoming space for board game lovers of all levels. Come play, explore, and connect.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-white h5">Quick Links</h3>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home" class="text-white-50">Home</a></li>
+                        <li><a href="#services" class="text-white-50">Services</a></li>
+                        <li><a href="#new-games" class="text-white-50">New Games</a></li>
+                        <li><a href="#fav-games" class="text-white-50">Favourites</a></li>
+                        <li><a href="#game-library" class="text-white-50">Game Library</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-white h5">Find Us</h3>
+                    <address class="text-white-50">
+                        <p>
+                            <i class="fa-solid fa-location-dot me-2" aria-hidden="true"></i>
+                            123 Boardwalk Avenue<br>
+                            Brighton, BN1 1AB
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone me-2" aria-hidden="true"></i>
+                            <a href="tel:+441234567890" class="text-white-50">+44 1234 567890</a>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>
+                            <a href="mailto:hello@boardwalkgames.co.uk" class="text-white-50">hello@boardwalkgames.co.uk</a>
+                        </p>
+                    </address>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href="#" class="text-white-50 social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook fa-lg" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="text-white-50 social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram fa-lg" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="text-white-50 social-link" aria-label="Twitter / X">
+                            <i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Bar -->
+    <footer class="py-3 bg-footer text-center text-white-50 small">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Boardwalk Games. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
