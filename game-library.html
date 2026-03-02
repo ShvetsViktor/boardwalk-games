@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
@@ -55,12 +55,50 @@
     </nav>
 
     <!-- Header with carousel -->
-    <header class="container">
+    <header id="header" class="container section">
         <div class="row">
-            <div class="col-12 col-xl-6">Game library intro text section</div>
-            <div class="col-12 col-xl-6">Carousel</div>
+            <div class="col-12 col-xl-6 text-center text-xl-start">
+                <h1 class="display-3">Game Library</h1>
+                <p class="lead display-6 sub-heading">Discover new games to rent or buy</p>
+                <p class="my-4">Dive into a world of adventure, strategy, and fun with our carefully curated collection
+                    of board games to rent or buy. From timeless classics to the latest sensations, our shelves are
+                    packed with games waiting to be discovered.</p>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/game-library-carousel-1.webp" class="d-block w-100"
+                                alt="Bookshelves filled with boardgames">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/game-library-carousel-2.webp" class="d-block w-100"
+                                alt="Bookshelves filled with boardgames">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/game-library-carousel-3.webp" class="d-block w-100"
+                                alt="Bookshelves filled with boardgames, one man is browsing the shelves">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/game-library-carousel-4.webp" class="d-block w-100"
+                                alt="T8 board games stacked on top of each other">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
+
 
     <!-- Main element -->
     <main>
