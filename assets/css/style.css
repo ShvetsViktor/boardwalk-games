@@ -96,6 +96,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Discount */
+
+#events .discount {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
 /* Footer / contact */
 
 #contact {
