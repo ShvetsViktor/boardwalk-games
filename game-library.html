@@ -244,6 +244,63 @@
                 </div>
             </div>
         </section>
+
+        <!-- Reservation section -->
+        <section id="reserve-form" class="container section">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">Reserve a game</h2>
+                </div>
+                <div class="col-12 col-md-8 mx-auto">
+                    <p>Reserve a board game for your next visit to
+                        Boardwalk
+                        Games. Pick your challenge, and let the
+                        adventure begin! Fill out your details and preferred game below, and we'll have it set aside for
+                        you when you arrive.
+                    </p>
+                </div>
+                <div class="col-12 col-md-8 mx-auto">
+                    <form action="success.html" method="GET">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" inputmode="tel"
+                                autocomplete="tel" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gameSelect" class="form-label">Select a game</label>
+                            <select class="form-select" id="gameSelect" name="game" autocomplete="off" required>
+                                <option value="" selected disabled>Choose a game</option>
+                                <option value="Galaxy Pioneers">Galaxy Pioneers</option>
+                                <option value="Mystic Woods">Mystic Woods</option>
+                                <option value="Captain's Gambit">Captain's Gambit</option>
+                                <option value="Critter Quest">Critter Quest</option>
+                                <option value="Settlers of Catan">Settlers of Catan</option>
+                                <option value="Monopoly">Monopoly</option>
+                                <option value="Exploding Kittens">Exploding Kittens</option>
+                                <option value="Cluedo">Cluedo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="calendar" class="form-label">Preferred date</label>
+                            <input type="date" class="form-control" id="calendar" name="preferredDate"
+                                autocomplete="off" required>
+                        </div>
+                        <button type="submit" class="btn custom-button-outline float-end mt-4">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -263,7 +320,7 @@
                         Boardwalk City, 12345
                     </address>
                     <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
-                        <i class="fa-regular fa-paper-plane"></i> info@boardwalk-games.co
+                        <i class="fa-regular fa-paper-plane"></i> info@boardwalk-games.co.uk
                     </p>
                     <div class="social-links mt-4">
                         <a href="https://www.instagram.com" target="_blank"
